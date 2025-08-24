@@ -102,12 +102,6 @@ export default function MemberPage({ params }: MemberPageProps) {
                                     <Skills skills={member.skills} />
                                 </div>
                             </div>
-                            <div>
-                                <h2 className="text-2xl font-semibold font-headline text-foreground">Пример кругового индикатора</h2>
-                                <div className="mt-4 flex gap-4">
-                                    <Skills skills={[{ name: 'Circular', level: 75, type: 'circle' }]} />
-                                </div>
-                            </div>
                             {member.portfolio && member.portfolio.length > 0 && (
                                 <>
                                     <Separator />
