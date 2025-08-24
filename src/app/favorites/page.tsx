@@ -29,10 +29,10 @@ export default function FavoritesPage() {
     return (
         <div className="container mx-auto px-4 py-8">
             <header className="text-center my-12">
-                <h1 className="text-4xl font-bold tracking-tight text-primary-foreground/90 sm:text-5xl font-headline">
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl font-headline">
                     Избранные Участники
                 </h1>
-                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-4 text-lg text-gray-200 text-muted-foreground max-w-2xl mx-auto">
                     Ваш личный список самых выдающихся членов команды.
                 </p>
             </header>
@@ -45,9 +45,9 @@ export default function FavoritesPage() {
                 </div>
             ) : (
                 <div className="text-center py-16">
-                    <HeartCrack className="mx-auto h-16 w-16 text-muted-foreground/50"/>
-                    <h2 className="mt-4 text-2xl font-semibold text-muted-foreground">Список избранного пуст</h2>
-                    <p className="mt-2 text-muted-foreground">
+                    <HeartCrack className="mx-auto h-60 w-60 text-rose-400"/>
+                    <h2 className="mt-4 text-2xl font-semibold text-muted-foreground text-white">Список избранного пуст</h2>
+                    <p className="mt-2 text-muted-foreground text-white">
                         Вы еще не добавили ни одного участника. Вернитесь на главную, чтобы выбрать.
                     </p>
                 </div>

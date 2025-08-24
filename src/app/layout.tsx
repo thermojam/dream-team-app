@@ -145,7 +145,7 @@ export default function RootLayout({
         <ToastProvider>
             <div className="flex min-h-screen w-full flex-col">
                 <Header/>
-                <main className="flex-1 bg-gradient-to-r from-blue-400/50 to-blue-500/10 border-2 border-blue-100">
+                <main className="flex-1 bg-gradient-to-r from-violet-600 to-fuchsia-800 ">
                     {children}
                 </main>
                 <Footer/>

@@ -3,7 +3,7 @@ import type {TeamMember} from '@/types';
 export const teamData: TeamMember[] = [
     {
         id: '1',
-        name: 'Никита Каменский',
+        name: 'Никита Mенский',
         age: 33,
         role: 'Frontend Разработчик',
         isLead: true,
@@ -15,7 +15,7 @@ export const teamData: TeamMember[] = [
             linkedin: 'https://linkedin.com',
         },
         skills: [
-            {name: 'React', level: 95},
+            {name: 'React', level: 100},
             {name: 'TypeScript', level: 90},
             {name: 'Next.js', level: 85},
             {name: 'CSS/Tailwind', level: 98},
