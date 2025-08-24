@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary-foreground/90 font-headline">
             <Users className="h-6 w-6 text-accent" />
-            <span>Team Showcase</span>
+            <span>Dream Team</span>
           </Link>
           <nav className="flex items-center gap-6 text-sm font-medium">
             <Link href="/" className="transition-colors text-muted-foreground hover:text-foreground">
