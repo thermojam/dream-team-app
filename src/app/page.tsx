@@ -9,7 +9,7 @@ export default function Home() {
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
                     Наша Команда
                 </h1>
-                <p className="mt-2 text-lg text-gray-200 text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-2 text-lg text-gray-100 text-muted-foreground max-w-2xl mx-auto">
                     Познакомьтесь с талантливыми людьми, которые сделали этот проект возможным.
                 </p>
             </header>
