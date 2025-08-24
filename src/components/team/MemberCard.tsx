@@ -53,7 +53,7 @@ const MemberCard = ({member}: MemberCardProps) => {
                     </Link>
                 </Button>
             </CardContent>
-            <CardFooter className="p-4 pt-0 absolute top-[10] left-0">
+            <CardFooter className="p-4 pt-0 absolute mt-6">
                 {member.isLead && <Badge variant="destructive">Тимлид</Badge>}
             </CardFooter>
         </Card>
