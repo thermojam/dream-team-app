@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-primary-foreground/90 sm:text-5xl md:text-6xl font-headline">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl font-headline">
           Наша Команда
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="mt-4 text-lg text-gray-500 text-muted-foreground max-w-2xl mx-auto">
           Познакомьтесь с талантливыми людьми, которые сделали этот проект возможным.
         </p>
       </header>
-      
+
       <div className="max-w-4xl mx-auto mb-12">
         <Accordion type="single" collapsible className="w-full bg-card rounded-lg p-2 shadow-sm">
           <AccordionItem value="item-1">
