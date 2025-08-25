@@ -9,7 +9,7 @@ export default function Home() {
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
                     Наша Команда
                 </h1>
-                <p className="mt-2 text-lg text-gray-100 text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-2 text-lg text-white text-muted-foreground max-w-2xl mx-auto">
                     Познакомьтесь с талантливыми людьми, которые сделали этот проект возможным.
                 </p>
             </header>
@@ -17,7 +17,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto mb-12">
                 <Accordion type="single" collapsible className="w-full bg-card rounded-lg p-2 shadow-sm">
                     <AccordionItem value="item-1">
-                        <AccordionTrigger className="text-lg font-semibold px-4">Информация о команде</AccordionTrigger>
+                        <AccordionTrigger className="text-lg font-semibold decoration-0 px-4">Информация о команде</AccordionTrigger>
                         <AccordionContent className="px-4 pt-2 text-muted-foreground">
                             Мы — сплоченная команда энтузиастов, увлеченных созданием современных и удобных
                             веб-приложений. Наш коллективный опыт охватывает весь спектр веб-разработки, от фронтенда до

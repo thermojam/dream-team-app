@@ -32,7 +32,7 @@ export default function FavoritesPage() {
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl font-headline">
                     Избранные Участники
                 </h1>
-                <p className="mt-4 text-lg text-gray-100 text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-4 text-lg text-white text-muted-foreground max-w-2xl mx-auto">
                     Ваш личный список самых выдающихся членов команды.
                 </p>
             </header>

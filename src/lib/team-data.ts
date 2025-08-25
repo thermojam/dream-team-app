@@ -16,14 +16,14 @@ export const teamData: TeamMember[] = [
         },
         skills: [
             {name: 'React', level: 100},
-            {name: 'TypeScript', level: 90},
-            {name: 'Next.js', level: 85},
-            {name: 'CSS/Tailwind', level: 98},
+            {name: 'TypeScript', level: 80},
+            {name: 'Next.js', level: 65},
+            {name: 'CSS/Tailwind', level: 50},
         ],
         portfolio: [
-            '/port-5.jpg',
+            '/port-9.jpg',
             '/port-6.jpg',
-
+            '/port-mob.jpg',
         ],
     },
     {
@@ -62,9 +62,9 @@ export const teamData: TeamMember[] = [
         },
         skills: [
             {name: 'Figma', level: 97},
-            {name: 'User Research', level: 90},
-            {name: 'Prototyping', level: 94},
-            {name: 'Design Systems', level: 89},
+            {name: 'User Research', level: 80},
+            {name: 'Prototyping', level: 74},
+            {name: 'Design Systems', level: 69},
         ],
         portfolio: [
             '/port-3.jpg',
@@ -84,13 +84,14 @@ export const teamData: TeamMember[] = [
             github: 'https://github.com',
         },
         skills: [
-            {name: 'React', level: 88},
-            {name: 'Node.js', level: 85},
-            {name: 'CI/CD', level: 78},
-            {name: 'Firebase', level: 82},
+            {name: 'React', level: 80},
+            {name: 'Node.js', level: 95},
+            {name: 'CI/CD', level: 50},
+            {name: 'Firebase', level: 42},
         ],
         portfolio: [
-            '/port-1.jpg',
+            '/port-mob.jpg',
+            '/port-lap.jpg',
         ],
     },
 ];

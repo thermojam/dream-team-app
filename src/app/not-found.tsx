@@ -9,12 +9,12 @@ export default function NotFound() {
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 Страница не найдена
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground text-gray-100">
+            <p className="mt-4 text-lg text-muted-foreground text-white">
                 К сожалению, мы не смогли найти страницу, которую вы ищете.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button asChild>
-                    <Link href="/">Вернуться на главную</Link>
+                <Button asChild className="bg-white">
+                    <Link className="text-purple-950" href="/">Вернуться на главную</Link>
                 </Button>
             </div>
         </div>

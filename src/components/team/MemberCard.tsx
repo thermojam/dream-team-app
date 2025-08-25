@@ -46,7 +46,7 @@ const MemberCard = ({member}: MemberCardProps) => {
                     </Link>
                     <Badge variant={getRoleBadgeVariant(member.role)} className="mt-2">{member.role}</Badge>
                 </div>
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="outline" size="sm" className="bg-violet-500 text-white">
                     <Link href={`/team/${member.id}`}>
                         Open
                         <ArrowRight className="ml-2 h-4 w-4"/>
