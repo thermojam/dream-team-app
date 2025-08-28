@@ -17,7 +17,7 @@ const MemberCard = ({member}: MemberCardProps) => {
         if (role.toLowerCase().includes('frontend')) return 'success';
         if (role.toLowerCase().includes('backend')) return 'info';
         if (role.toLowerCase().includes('full-stack')) return 'warning';
-        if (role.toLowerCase().includes('designer')) return 'default';
+        if (role.toLowerCase().includes('ui/ux')) return 'pink';
         return 'secondary';
     }
 
