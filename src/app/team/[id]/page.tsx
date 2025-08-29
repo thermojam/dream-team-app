@@ -1,15 +1,15 @@
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Github, Linkedin, Twitter } from 'lucide-react';
-import { teamData } from '@/lib/team-data';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import Skills from '@/components/team/Skills';
-import PortfolioSlider from '@/components/team/PortfolioSlider';
-import FavoriteButton from '@/components/team/FavoriteButton';
-import Breadcrumbs from '@/components/layout/Breadcrumbs';
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { teamData } from "@/lib/team-data";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import Skills from "@/components/team/Skills";
+import PortfolioSlider from "@/components/team/PortfolioSlider";
+import FavoriteButton from "@/components/team/FavoriteButton";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 interface MemberPageProps {
     params: {
@@ -35,7 +35,7 @@ export default function MemberPage({ params }: MemberPageProps) {
     }
 
     const breadcrumbItems = [
-        { label: 'Команда', href: '/' },
+        { label: "Команда", href: "/" },
         { label: member.name, href: `/team/${member.id}` },
     ];
 
@@ -60,22 +60,48 @@ export default function MemberPage({ params }: MemberPageProps) {
                                 </div>
                             </div>
                             <div className="mt-6">
-                                <h1 className="text-3xl font-bold font-headline text-foreground">{member.name}</h1>
-                                <p className="text-lg text-accent font-semibold mt-1">{member.role}</p>
-                                {member.isLead && <Badge className="mt-2" variant="destructive">Тимлид</Badge>}
+                                <h1 className="text-3xl font-bold font-headline text-foreground">
+                                    {member.name}
+                                </h1>
+                                <p className="text-lg text-accent font-semibold mt-1">
+                                    {member.role}
+                                </p>
+                                {member.isLead && (
+                                    <Badge
+                                        className="mt-2"
+                                        variant="destructive"
+                                    >
+                                        Тимлид
+                                    </Badge>
+                                )}
                                 <div className="flex items-center space-x-4 mt-4">
                                     {member.socials.github && (
-                                        <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                                        <a
+                                            href={member.socials.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-muted-foreground hover:text-foreground"
+                                        >
                                             <Github className="h-6 w-6" />
                                         </a>
                                     )}
                                     {member.socials.linkedin && (
-                                        <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                                        <a
+                                            href={member.socials.linkedin}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-muted-foreground hover:text-foreground"
+                                        >
                                             <Linkedin className="h-6 w-6" />
                                         </a>
                                     )}
                                     {member.socials.twitter && (
-                                        <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                                        <a
+                                            href={member.socials.twitter}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-muted-foreground hover:text-foreground"
+                                        >
                                             <Twitter className="h-6 w-6" />
                                         </a>
                                     )}
@@ -87,32 +113,46 @@ export default function MemberPage({ params }: MemberPageProps) {
                     <div className="md:col-span-2">
                         <div className="space-y-8">
                             <div>
-                                <h2 className="text-2xl font-semibold font-headline text-foreground">Обо мне</h2>
+                                <h2 className="text-2xl font-semibold font-headline text-foreground">
+                                    Обо мне
+                                </h2>
                                 <p className="mt-2 text-muted-foreground leading-relaxed">{`Возраст: ${member.age} | ${member.bio}`}</p>
                             </div>
                             <Separator />
                             <div>
-                                <h2 className="text-2xl font-semibold font-headline text-foreground">Вклад в проект</h2>
-                                <p className="mt-2 text-muted-foreground leading-relaxed">{member.contribution}</p>
+                                <h2 className="text-2xl font-semibold font-headline text-foreground">
+                                    Вклад в проект
+                                </h2>
+                                <p className="mt-2 text-muted-foreground leading-relaxed">
+                                    {member.contribution}
+                                </p>
                             </div>
                             <Separator />
                             <div>
-                                <h2 className="text-2xl font-semibold font-headline text-foreground">Ключевые навыки</h2>
+                                <h2 className="text-2xl font-semibold font-headline text-foreground">
+                                    Ключевые навыки
+                                </h2>
                                 <div className="mt-4">
                                     <Skills skills={member.skills} />
                                 </div>
                             </div>
-                            {member.portfolio && member.portfolio.length > 0 && (
-                                <>
-                                    <Separator />
-                                    <div>
-                                        <h2 className="text-2xl font-semibold font-headline text-foreground">Портфолио</h2>
-                                        <div className="mt-4">
-                                            <PortfolioSlider images={member.portfolio} name={member.name} />
+                            {member.portfolio &&
+                                member.portfolio.length > 0 && (
+                                    <>
+                                        <Separator />
+                                        <div>
+                                            <h2 className="text-2xl font-semibold font-headline text-foreground">
+                                                Портфолио
+                                            </h2>
+                                            <div className="mt-4">
+                                                <PortfolioSlider
+                                                    images={member.portfolio}
+                                                    name={member.name}
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                </>
-                            )}
+                                    </>
+                                )}
                         </div>
                     </div>
                 </div>
