@@ -34,5 +34,6 @@ const Skills = ({ skills }: SkillsProps) => {
         </div>
     );
 };
+// no fragment
 
 export default Skills;
