@@ -50,4 +50,6 @@ const PortfolioSlider = ({ images, name }: PortfolioSliderProps) => {
     );
 };
 
+// def
+
 export default PortfolioSlider;
